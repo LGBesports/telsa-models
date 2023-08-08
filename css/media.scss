@@ -1,4 +1,17 @@
 @media (max-width: 1100px) {
+    .future {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background: #fff;
+        gap: 24px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
     .join__columns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -11,6 +24,51 @@
         width: 100%;
         top: 84vh;
         z-index: 1;
+    }
+    .charasteristics picture {
+        min-width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .trip.reverse.page {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: column;
+    }
+    .trip.new2 picture {
+        width: 100%;
+        height: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .data.new .data__extra {
+        height: 50%;
+        max-height: inherit;
+    }
+    .trip.new2 .trip__extra {
+        position: absolute;
+        width: 75%;
+        bottom: auto;
+        top: calc(50% - 100px) !important;
+        left: 12.5%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 24px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .trip.reverse.page .trip__data {
+        background: #fff;
+        color: #000;
+        width: 100%;
     }
     .double__item p {
         display: block;
@@ -69,9 +127,6 @@
     }
 }
 @media (max-width: 768px) {
-    .trip{
-        height: auto;
-    }
     .trip__extra-item p {
         display: none;
     }
@@ -79,9 +134,9 @@
         display: block;
         font-size: 12px;
         white-space: nowrap;
-                font-weight: 400;
-                line-height: 18px;
-                padding-top: 8px;
+        font-weight: 400;
+        line-height: 18px;
+        padding-top: 8px;
     }
     .trip__extra-item {
         color: #fff;
@@ -91,17 +146,22 @@
     .join__columns {
         flex-wrap: wrap;
         width: 100%;
-        gap: 24px;
+        gap: 10px 24px;
         top: 75vh;
-        div{
+        div {
             text-align: center;
         }
     }
-    .data{
+    .data {
         .join__columns {
             flex-wrap: nowrap;
         }
     }
+    .types__choose.height .types__data {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .types__choose-item p {
         font-size: 14px;
         font-weight: 400;
@@ -123,7 +183,7 @@
     }
     .join__columns .item4 {
         display: none;
-        &.new{
+        &.new {
             display: block;
         }
     }
@@ -150,7 +210,6 @@
         font-weight: 500;
     }
     .join__columns-item p {
-
         text-align: center;
         font-size: 3.2vmin;
         line-height: 4vmin;
@@ -175,7 +234,6 @@
         color: #fff;
     }
     .double__link a {
-
         width: calc(100% - 48px);
     }
     .double__wrapper {
@@ -314,7 +372,7 @@
         -o-object-fit: cover;
         object-fit: cover;
     }
-    
+
     .swiper .swiper-pagination {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -406,6 +464,8 @@
         flex-direction: column;
     }
     .trip.new .trip__car img {
+        min-width: inherit;
+        max-width: inherit;
         width: 140%;
         margin-left: 20%;
         -o-object-fit: cover;
@@ -424,7 +484,7 @@
         margin-left: 16px;
         display: block;
         position: absolute;
-        
+
         right: 102%;
         width: 100px;
         text-align: right;
@@ -440,7 +500,7 @@
         bottom: 0;
         left: auto;
         right: 102%;
-        
+
         text-align: right;
     }
     .trip.new .trip__car .line1 {
@@ -488,22 +548,22 @@
         -ms-flex-pack: justify;
         justify-content: space-evenly;
     }
-    .control__advanced-item{
+    .control__advanced-item {
         max-width: 105px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        p{
+        p {
             display: none;
         }
-        h2{
+        h2 {
             font-size: 20px;
-            span{
+            span {
                 font-size: 20px;
             }
         }
-        
-        small{
+
+        small {
             display: block;
             padding-top: 8px;
             font-size: 12px;
@@ -640,10 +700,10 @@
         max-width: inherit;
         padding-bottom: 6vh;
     }
-    .mob{
+    .mob {
         display: flex !important;
     }
-    .pc{
+    .pc {
         display: none !important;
     }
     .control {
@@ -653,7 +713,7 @@
     .footer__models .textarea .btns {
         flex-direction: column;
         gap: 0;
-        a{
+        a {
             margin: 12px 0;
             width: 100%;
         }
@@ -664,9 +724,453 @@
         -o-object-fit: cover;
         object-fit: cover;
     }
+    .join.page {
+        .join__columns-item a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-left: 8px;
+            line-height: 5vmin;
+            font-size: 4vmin;
+            width: 90vmin;
+            margin: 0 auto;
+            height: 10vmin;
+            border-radius: 4px;
+            border: 3px solid #000;
+            color: #000;
+            background: #00000000;
+            font-weight: 500;
+        }
+    }
+    .papapa {
+        padding-top: 10px;
+        font-size: 14px !important;
+    }
+    .join.page .odometer,
+    .data .odometer {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .join.page .join__columns-item,
+    .data .join__columns-item {
+        font-size: 20px;
+        color: #000;
+        line-height: 20px;
+    }
+    .join.page .join__columns-item p,
+    .data .join__columns-item p {
+        padding-top: 1vmin;
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: -0.04vmin;
+        color: #393c41;
+    }
+    .join.page .join__columns,
+    .data .join__columns {
+        top: auto;
+        bottom: 100px;
+    }
+    .join.page {
+        background: url(../img/model3-mobile.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .trip.reverse.page {
+        flex-direction: column;
+    }
+    .trip.reverse.page .trip__data {
+        background: #fff;
+        color: #000;
+        width: 100%;
+    }
+    .trip.reverse.page .trip__car {
+        width: 100%;
+        min-height: 50%;
+    }
+    #blackbox {
+        padding-top: 0;
+    }
+    .data.new .join__columns-item #odometer {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .join__columns-item small {
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: -3px;
+    }
+    .trip__data h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .trip.new b {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        padding-bottom: 8px;
+        display: block;
+    }
+    .trip.new .trip__data p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .trip.new a {
+        width: 100%;
+    }
+    .data .picture .join__columns.extra {
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+    .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+        width: 3.5vmin;
+    }
+    .data.new .data__extra {
+        padding: 20px 24px;
+
+        padding-bottom: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        align-items: flex-start;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .data.new .data__extra.less {
+        padding: 10px 24px;
+    }
+    .data.new .picture {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 45%;
+    }
+    .trip .future {
+        padding: 10px 24px;
+        gap: 10px;
+    }
+    .trip.page {
+        .future p {
+            font-size: 13px;
+            line-height: 15px;
+        }
+        .future__click span {
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            line-height: 20px;
+        }
+    }
+    .data.new .data__extra a {
+        min-height: 40px;
+        color: #000;
+        font-size: 14px;
+        margin: 16px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: 2px #000 solid;
+        width: 100%;
+        border-radius: 4px;
+        -webkit-box-direction: normal;
+    }
+    .data.new {
+    }
+    .data__extra h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 8px;
+        padding-bottom: 9px;
+        white-space: inherit;
+    }
+    .data.new .data__extra p {
+        line-height: 14px;
+        line-height: 16px;
+        margin-top: 0px;
+        font-weight: 300;
+    }
+    .pcb {
+        display: none !important;
+    }
+    .trip.new2 picture {
+        width: 100%;
+        height: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .mobb {
+        display: block !important;
+    }
+    .data .picture .join__columns {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        padding-bottom: 30px;
+    }
+    .trip.page {
+        .trip__extra {
+            position: absolute;
+            width: 75%;
+            bottom: auto;
+            top: calc(50% - 100px);
+            left: 12.5%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 24px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+    .trip.new2 a {
+        width: 100%;
+    }
+    .sliding .future {
+        height: 50%;
+        padding: 10px 24px;
+        gap: 10px;
+        justify-content: flex-start;
+        a {
+            height: 40px;
+            width: 100%;
+            color: #000;
+            font-size: 14px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px #000 solid;
+            width: 100%;
+            margin: 0 auto;
+            -webkit-box-direction: normal;
+            transition: border-color 0.33s ease, background-color 0.33s ease, color 0.33s ease, box-shadow 0.25s ease;
+            &:hover {
+                transition: border-color 0.33s ease, background-color 0.33s ease, color 0.33s ease,
+                    box-shadow 0.25s ease;
+                color: #fff;
+                background: #000;
+            }
+        }
+    }
+    .sliding .control {
+        height: 55%;
+        position: relative;
+    }
+    .sliding .control__advanced {
+        position: absolute;
+        left: 0;
+        height: auto;
+        top: auto;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 30px 0;
+        gap: 24px;
+        padding-left: 0px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .data .picture .join__columns {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+    .data.third .join__columns-item p {
+        text-align: center;
+    }
+    .sliding.page {
+        a {
+        }
+    }
+    .data.third .join__columns-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .big {
+        line-height: 40px;
+        font-size: 17px;
+        white-space: nowrap;
+    }
+    .charasteristics.page picture {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .footer.page .footer__models .textarea {
+        width: 100%;
+    }
+    .footer.page .textarea a.new {
+        width: 100%;
+    }
+    .footer.page .footer__info {
+        height: 15vh;
+        position: absolute;
+        bottom: 0vh;
+        left: 0;
+        padding: 0 24px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 780px;
+    }
+    .footer.page .footer__models picture {
+        width: 100%;
+        padding-top: 10vh;
+        display: block;
+    }
+    .footer.page .footer__models {
+        padding-top: 15vh;
+        justify-content: start;
+    }
+    .future__click span {
+        font-size: 20px;
+        font-weight: 500;
+        display: block;
+        line-height: 26px;
+    }
+    .trip .future {
+        padding: 20px 24px;
+        p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .future__click b {
+        margin-bottom: 8px;
+    }
+    .trip.new2 a {
+        margin: 0px 0;
+    }
+    .data.new .data__extra {
+        gap: 5px;
+    }
+    .data.new.wow .picture {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 60%;
+    }
+    .trip.more {
+        flex-direction: column !important;
+        height: auto;
+        padding-bottom: 40px;
+        picture {
+            width: 100% !important;
+            height: 50vh;
+        }
+        .trip__data {
+            width: 100% !important;
+        }
+        a {
+            margin-top: 16px !important;
+        }
+        .trip__extra-item b {
+            white-space: inherit !important;
+        }
+        .trip__extra {
+            top: calc(50vh - 120px) !important;
+        }
+    }
+    .text-modelx {
+        background: #fff;
+        padding: 30px 24px;
+        h2 {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+    .control.modelx {
+        .control__advanced-item h2 {
+            text-align: center;
+        }
+    }
+    .trip.modelx.new2 {
+        height: auto;
+        .trip__data {
+            width: 100% !important;
+        }
+        .trip__extra {
+            position: absolute;
+            width: 75%;
+            bottom: auto;
+            top: calc(50vh - 100px) !important;
+            left: 12.5%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 24px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        picture {
+            width: 100%;
+            height: 50vh;
+
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        .trip__extra-item b {
+            white-space: inherit !important;
+        }
+    }
+    .join.modelx{
+        background: url(../img/modelx-mob.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+        .item4{
+            display: flex !important;
+        }
+    }
 }
 @media (max-width: 600px) {
     .trip.new .trip__car img {
+        height: 100%;
         width: 80%;
         margin-left: 20%;
         -o-object-fit: cover;

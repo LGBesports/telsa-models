@@ -1,0 +1,80 @@
+.join.modely {
+  background: url(../img/ModelY.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page.auto {
+  width: 100%;
+  height: auto;
+}
+
+.future.first {
+  padding-top: 24px;
+}
+
+.future.second {
+  padding-top: 72px;
+}
+
+.swiper-content img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.main-slider {
+  background: #fff;
+}
+
+.data.new .picture {
+  height: 70vh;
+}
+
+.trip__data {
+  background: #fff;
+}
+
+.trip__data h2, .trip__data p {
+  color: #393c41;
+}
+
+.trip__data a {
+  color: #000;
+  border: 2px #000 solid;
+}
+
+.trip__data a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.trip.new .trip__car img {
+  min-width: 100%;
+  max-width: 100%;
+  margin-left: 0%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.trip.new .trip__car .line1 {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 40vmin);
+  width: 45vw;
+  height: 17vmin;
+}
+
+.future {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 180px;
+}
+/*# sourceMappingURL=modely.css.map */
